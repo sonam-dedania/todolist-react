@@ -1,0 +1,181 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/**************************/
+
+.item-div{
+  background-color:#F8F8F8;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 2px;
+  padding-top: 50px;
+}
+.todo-div{
+  background-color:#F8F8F8;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 2px;
+}
+.todolist-div{
+  background-color:#F8F8F8;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+i .icon-plus{
+  font-size: 8px;
+  position: absolute;
+  left: 3.8px;
+  top: 3px;
+}
+.icon-circle{
+position: relative;
+}
+.add-item .icon-tag{
+  position: absolute;
+  margin-top: 12px;
+  margin-left: 6px;
+}
+.input-item{
+  padding:5px;
+  border-radius: 4px;
+  border: 2px solid #C9C9C9;
+  width: 100%;
+	font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+}
+::placeholder{
+  color: #c9c9c9;
+}
+Button{
+  width:100%;
+}
+.todo-header{
+  border: 2px solid #C9C9C9;
+  font-weight: bold;
+  margin-top: 50px;
+  background-color:#ffffff;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.todo-list-item
+{
+  border-left: 2px solid #C9C9C9;
+  border-right: 2px solid #C9C9C9;
+  border-bottom: 2px solid #C9C9C9;
+  padding: 20px;
+}
+.delete-btn
+{
+  background-color: #F8F8F8!important;
+  border: 2px solid #C9C9C9!important;
+  width:50px;
+  height: 35px;
+  float: right;
+  position: relative;
+}
+.icon-delete
+{
+  color: red;
+  position: absolute;
+  left: 18px;
+  top: 6px;
+}
+.todo-list-item
+{
+  background-color: #ffffff;
+}
+ .list p
+ {
+   display: inline;
+ }
+ .input-checkbox{
+  width: 17px!important;
+  height: 17px!important;
+ }
+ .border-bot
+ {
+   border-bottom: 2px solid #C9C9C9;
+   padding-bottom: 10px;
+   padding-top: 10px;
+ }
+ .top-space
+ {
+  padding-bottom: 10px;
+  padding-top: 10px;
+ }
+ .icon-square1{
+   font-size: 30px!important;
+   position: relative;
+   background-color: #FFEFE5;
+   color: #ff8b78;
+   top: 3px;
+ }
+ .icon-square2{
+  font-size: 30px!important;
+  position: relative;
+  background-color: #F4FFEB;
+  color: #67CE58;
+  top: 3px;
+}
+ .icon-minus{
+   position: absolute;
+   left: 49px;
+   top: 15px;
+   font-size: 8px!important;
+   color: #ff8b78;
+ }
+ .icon-check{
+  position: absolute;
+  left: 45px;
+  top: 11px;
+  font-size: 14px!important;
+  color: #67CE58;
+}
+.para-strike
+{
+  text-decoration: line-through;
+}
+.align
+{
+  font-size: 17px;
+  vertical-align: text-bottom;
+}
