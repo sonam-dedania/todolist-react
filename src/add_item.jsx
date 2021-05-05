@@ -22,7 +22,7 @@ class AddItem extends React.Component {
     addItem = () => {
         let todo = {
             name: this.state.listItem,
-            isChecked: false
+            isChecked: false,
         };
         //this.state.todoList.push(todo);
         this.props.setList(todo);

@@ -9,13 +9,13 @@ class TodoList extends React.Component {
         super(props);
     }
 
-    checkedItem = (e, item) => {
+    checkedItem = (e, item, index) => {
 
-        this.props.checkedItem(item.name, e.target.checked);
+        this.props.checkedItem(item.name, e.target.checked, index);
     }
 
-    deleteItem = (item) => {
-        this.props.remove(item.name);
+    deleteItem = (item, index) => {
+        this.props.remove(item.name, index);
     }
 
     render() {
@@ -26,15 +26,15 @@ class TodoList extends React.Component {
                         return <Row className={(index + 1 === length) ? 'top-space' : 'border-bot'}>
                             <Col lg={10} md={10} sm={10}>
                                 <div className="list">
-                                    <input type="checkbox" className="input-checkbox" onChange={(e) => this.checkedItem(e, item)} />&#x2002;
+                                    <input type="checkbox" checked={item.isChecked} className="input-checkbox" onChange={(e) => this.checkedItem(e, item, index)} />&#x2002;
                                     <i className={`fa fa-square-o ${(item.isChecked === true) ? 'icon-square2' : 'icon-square1'}`} aria-hidden="true"></i>
                                     <i className={`fa ${(item.isChecked === true) ? 'fa-check icon-check' : 'fa-minus icon-minus'}`} aria-hidden="true"></i>&#x2002;
              {/* <i className="fa fa-square-o icon-square2" aria-hidden="true"></i><i className="fa fa-check icon-check" aria-hidden="true"></i>&#x2002; */}
-                                    <p className={(item.isChecked === true) ? 'para-strike align' : 'align'}>{item.name}</p>
+                                    <p key={index} className={(item.isChecked === true) ? 'para-strike align' : 'align'}>{item.name}</p>
                                 </div>
                             </Col>
                             <Col lg={2} md={2} sm={2}>
-                                <Button className="btn delete-btn" onClick={() => this.deleteItem(item)}><i className="fa fa-trash-o icon-delete" aria-hidden="true"></i></Button>
+                                <Button className="btn delete-btn" onClick={() => this.deleteItem(item, index)}><i className="fa fa-trash-o icon-delete" aria-hidden="true"></i></Button>
                             </Col>
                         </Row>
 
