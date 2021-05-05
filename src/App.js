@@ -20,7 +20,7 @@ class App extends React.Component {
   componentDidMount = () => {
 
     let l1 = reactLocalStorage.get('todo');
-    console.log(l1);
+    //console.log(l1);
     if (l1) {
       this.setState({ todoItem: JSON.parse(l1) });
     }
