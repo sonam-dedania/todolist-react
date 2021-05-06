@@ -3,7 +3,6 @@ import React from 'react';
 import AddItem from './add_item';
 import TodoList from './todo_list';
 import { reactLocalStorage } from 'reactjs-localstorage';
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -47,7 +46,7 @@ class App extends React.Component {
         <AddItem setList={this.getData} />
         <div className="todo-div">
           <div className="todo-header">
-            <p className="fadeIn">Todo List</p>
+            <p>Todo List</p>
           </div>
         </div>
         <div className="todolist-div">

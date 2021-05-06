@@ -48,8 +48,8 @@ class AddItem extends React.Component {
                         </Col>
                     </Row>
                     <Row>
-                        <Col lg={12} md={12} sm={12}>
-                            <span style={{ color: "red" }}>{this.state.error}</span>
+                        <Col lg={12} md={12} sm={12} >
+                            <div style={{ color: "red" }}>{this.state.error}</div>
                         </Col>
                     </Row>
                 </div>

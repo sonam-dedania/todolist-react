@@ -3,8 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
 import { Row, Col } from 'react-bootstrap';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
-import { fadeIn } from 'react-animation';
-
 class TodoList extends React.Component {
     constructor(props) {
         super(props);
@@ -21,17 +19,17 @@ class TodoList extends React.Component {
 
     render() {
         return (
-            <div className="todo-list-item">
+            <div className="todo-list-item ">
                 {
                     this.props.lists.map((item, index, { length }) => {
                         return <Row className={(index + 1 === length) ? 'top-space' : 'border-bot'}>
                             <Col lg={10} md={10} sm={10}>
-                                <div className="list">
+                                <div className="list animate__animated animate__bounceIn">
                                     <input type="checkbox" checked={item.isChecked} className="input-checkbox" onChange={(e) => this.checkedItem(e, item, index)} />&#x2002;
                                     <i className={`fa fa-square-o ${(item.isChecked === true) ? 'icon-square2' : 'icon-square1'}`} aria-hidden="true"></i>
                                     <i className={`fa ${(item.isChecked === true) ? 'fa-check icon-check' : 'fa-minus icon-minus'}`} aria-hidden="true"></i>&#x2002;
              {/* <i className="fa fa-square-o icon-square2" aria-hidden="true"></i><i className="fa fa-check icon-check" aria-hidden="true"></i>&#x2002; */}
-                                    <p key={index} className={(item.isChecked === true) ? 'para-strike align' : 'align'}>{item.name}</p>
+                                    <p key={index} className={(item.isChecked === true) ? 'para-strike align animate__bounceOut' : 'align'}>{item.name}</p>
                                 </div>
                             </Col>
                             <Col lg={2} md={2} sm={2}>
