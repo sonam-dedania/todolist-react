@@ -7,7 +7,7 @@ import { reactLocalStorage } from 'reactjs-localstorage';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { todoItem: [], color: 'red' };
+    this.state = { todoItem: [] };
   }
 
   getData = (todo) => {
@@ -20,7 +20,6 @@ class App extends React.Component {
   componentDidMount = () => {
 
     let l1 = reactLocalStorage.get('todo');
-    //console.log(l1);
     if (l1) {
       this.setState({ todoItem: JSON.parse(l1) });
     }
@@ -48,7 +47,7 @@ class App extends React.Component {
         <AddItem setList={this.getData} />
         <div className="todo-div">
           <div className="todo-header">
-            <p>Todo List</p>
+            <p className="fadeIn">Todo List</p>
           </div>
         </div>
         <div className="todolist-div">

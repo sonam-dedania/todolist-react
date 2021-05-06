@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
 import { Row, Col } from 'react-bootstrap';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
+import { fadeIn } from 'react-animation';
 
 class TodoList extends React.Component {
     constructor(props) {

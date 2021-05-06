@@ -62,7 +62,7 @@ i .icon-plus{
   font-size: 8px;
   position: absolute;
   left: 3.8px;
-  top: 3px;
+  top: 4px;
 }
 .icon-circle{
 position: relative;
@@ -178,4 +178,8 @@ Button{
 {
   font-size: 17px;
   vertical-align: text-bottom;
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
