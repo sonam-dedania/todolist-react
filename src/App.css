@@ -158,14 +158,14 @@ Button{
 }
  .icon-minus{
    position: absolute;
-   left: 34px;
+   left: 49px;
    top: 15px;
    font-size: 8px!important;
    color: #ff8b78;
  }
  .icon-check{
   position: absolute;
-  left: 30px;
+  left: 44px;
   top: 11px;
   font-size: 14px!important;
   color: #67CE58;

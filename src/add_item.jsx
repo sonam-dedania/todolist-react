@@ -23,6 +23,7 @@ class AddItem extends React.Component {
         let todo = {
             name: this.state.listItem,
             isChecked: false,
+            isDeleted: false
         };
         if (todo.name !== "") {
             this.props.setList(todo);

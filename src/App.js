@@ -35,9 +35,13 @@ class App extends React.Component {
   removeItem = (name, index) => {
     // const index = this.state.todoItem.findIndex(t => t.name === name);
     let newarr = this.state.todoItem;
-    newarr.splice(index, 1);
+    newarr[index].isDeleted = true;
     this.setState({ todoItem: newarr });
-    reactLocalStorage.set('todo', JSON.stringify(newarr));
+    setTimeout(() => {
+      newarr.splice(index, 1);
+      this.setState({ todoItem: newarr });
+      reactLocalStorage.set('todo', JSON.stringify(newarr));
+    }, 1000);
   }
 
   render() {
